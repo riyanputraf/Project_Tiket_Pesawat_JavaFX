@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="619.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHistory">
+   <children>
+      <AnchorPane prefHeight="108.0" prefWidth="890.0" style="-fx-background-color: #e056fd;">
+         <children>
+            <Label layoutX="38.0" prefHeight="82.0" prefWidth="178.0" style="-fx-text-fill: #ecf0f1;" text="HISTORY">
+               <font>
+                  <Font name="Dubai Medium" size="41.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="57.0" prefHeight="50.0" prefWidth="278.0" style="-fx-text-fill: #ecf0f1;" text="Check Your Order Here">
+               <font>
+                  <Font name="Dubai Regular" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableHistory" layoutX="56.0" layoutY="129.0" prefHeight="450.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="colMaskapai" prefWidth="200.00000762939453" text="Maskapai" />
+            <TableColumn fx:id="colTujuan" prefWidth="201.60003662109375" text="Tujuan" />
+            <TableColumn fx:id="colWaktu" prefWidth="200.79995727539062" text="Waktu" />
+            <TableColumn fx:id="colKelas" prefWidth="175.20001220703125" text="Kelas" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+
+    <children>
+        <VBox layoutX="-4.0" prefHeight="620.0" prefWidth="297.0" style="-fx-background-color: #3399ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="127.0" prefWidth="342.0" style="-fx-background-color: #3399ff;">
+                    <children>
+                        <Label fx:id="lblStatus1" layoutX="33.0" layoutY="43.0" text="J-Flight Admin" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="36.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+                <Button fx:id="createMaskapai" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="57.0" prefWidth="348.0" style="-fx-background-color: #3399ff;" text="Create Maskapai" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="createTiket" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="57.0" prefWidth="348.0" style="-fx-background-color: #3399ff;" text="Create Tiket" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="showTiket" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="57.0" prefWidth="348.0" style="-fx-background-color: #3399ff;" text="Show Tiket" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="history" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="57.0" prefWidth="348.0" style="-fx-background-color: #3399ff;" text="History" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="15.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="close" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#handleClose" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="57.0" prefWidth="348.0" style="-fx-background-color: #3399ff;" text="Close" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" left="40.0" top="15.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <StackPane layoutX="356.0" layoutY="154.0" prefHeight="466.0" prefWidth="762.0" AnchorPane.rightAnchor="15.0">
+            <children>
+                <GridPane fx:id="pnHistory" layoutX="10.0" layoutY="10.0" prefHeight="456.0" prefWidth="762.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="411.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TableView prefHeight="340.0" prefWidth="713.0" GridPane.rowIndex="1">
+                            <columns>
+                                <TableColumn fx:id="tableHistoryId" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="ID" />
+                                <TableColumn fx:id="tableHistoryMaskapai" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Maskapai" />
+                                <TableColumn fx:id="tableHistoryTujuan" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Tujuan" />
+                                <TableColumn fx:id="tableHistoryWaktu" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Waktu" />
+                                <TableColumn fx:id="tableHistoryJumlah" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Jumlah" />
+                                <TableColumn fx:id="tableHistoryKelas" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Kelas" />
+                                <TableColumn fx:id="tableHistoryTotal" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Total" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <HBox prefWidth="661.0" spacing="10.0">
+                            <children>
+                                <TextField fx:id="inputSearchHistory" prefHeight="35.0" prefWidth="561.0" />
+                                <Button fx:id="buttonSearchHistory" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #006680;" text="Search" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+                <GridPane fx:id="pnShowMaskapai" layoutX="10.0" layoutY="10.0" prefHeight="456.0" prefWidth="762.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="411.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TableView prefHeight="340.0" prefWidth="713.0" GridPane.rowIndex="1">
+                            <columns>
+                                <TableColumn fx:id="tableShowMaskapaiId" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="ID" />
+                                <TableColumn fx:id="tableShowMaskapai" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Maskapai" />
+                                <TableColumn fx:id="tableShowMaskapaiAksi" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Aksi" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <HBox spacing="10.0">
+                            <children>
+                                <TextField fx:id="inputSearchMaskapai" prefHeight="35.0" prefWidth="561.0" />
+                                <Button fx:id="buttonShowMaskapai" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #006680;" text="Search" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+                <GridPane fx:id="pnShowTiket" layoutX="10.0" layoutY="10.0" prefHeight="456.0" prefWidth="762.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="411.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TableView fx:id="tableViewShowTiket" prefHeight="340.0" prefWidth="713.0" GridPane.rowIndex="1">
+                            <columns>
+                                <TableColumn fx:id="tableShowTiketId" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="ID" />
+                                <TableColumn fx:id="tableShowTiketMaskapai" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Maskapai" />
+                                <TableColumn fx:id="tableShowTiketTujuan" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Tujuan" />
+                                <TableColumn fx:id="tableShowTiketWaktu" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Waktu" />
+                                <TableColumn fx:id="tableShowTiketKelas" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Kelas" />
+                                <TableColumn fx:id="tableShowTiketStok" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Stok" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <HBox spacing="10.0">
+                            <children>
+                                <TextField fx:id="inputSearchShowTiket" prefHeight="35.0" prefWidth="561.0" promptText="ID" />
+                                <Button fx:id="buttonSearchShowTiket" mnemonicParsing="false" onAction="#buttonCreateTiket" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #ff4d4d;" text="Delete" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+                <GridPane fx:id="pnTiket" layoutX="10.0" layoutY="10.0" prefHeight="456.0" prefWidth="762.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox minWidth="-Infinity" spacing="10.0">
+                            <children>
+                                <Label prefHeight="18.0" prefWidth="111.0" text="Maskapai" />
+                                <ComboBox fx:id="optionMaskapai" prefHeight="28.0" prefWidth="641.0" promptText="Select Maskapai" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" minWidth="-Infinity" spacing="10.0" GridPane.rowIndex="1">
+                            <children>
+                                <Label prefHeight="21.0" prefWidth="111.0" text="Tujuan" />
+                                <TextField fx:id="inputTujuan" prefHeight="35.0" prefWidth="641.0" promptText="Tujuan" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="87.0" spacing="10.0" GridPane.rowIndex="2">
+                            <children>
+                                <Label prefHeight="18.0" prefWidth="200.0" text="Waktu" />
+                                <DatePicker fx:id="inputWaktu" minWidth="-Infinity" prefHeight="31.0" prefWidth="641.0" promptText="Date" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="164.0" spacing="10.0" GridPane.rowIndex="3">
+                            <children>
+                                <Label prefHeight="18.0" prefWidth="200.0" text="Stok" />
+                                <TextField fx:id="inputStok" prefHeight="35.0" prefWidth="730.0" promptText="Stok" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="202.0" spacing="10.0" GridPane.rowIndex="4">
+                            <children>
+                                <Label prefHeight="18.0" prefWidth="200.0" text="Kelas" />
+                                <TextField fx:id="inputKelas" prefHeight="35.0" prefWidth="730.0" promptText="Kelas" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="267.0" spacing="10.0" GridPane.rowIndex="5">
+                            <children>
+                        <Label fx:id="labelTiket" alignment="CENTER" prefHeight="21.0" prefWidth="802.0" textFill="#ff4d4d" />
+                            </children>
+                        </HBox>
+                  <HBox layoutX="10.0" layoutY="337.0" spacing="10.0" GridPane.rowIndex="6">
+                     <children>
+                        <TextField fx:id="inputIdTiket" minWidth="-Infinity" prefHeight="35.0" prefWidth="139.0" promptText="ID" />
+                        <Button fx:id="updateButtonTiket" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCreateTiket" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: #006680;" text="Update" textFill="WHITE" />
+                        <Button fx:id="createButtonTiket" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCreateTiket" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: #3399ff;" text="Create" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                    </children>
+                </GridPane>
+                <GridPane fx:id="pnMaskapai" prefHeight="456.0" prefWidth="762.0" style="-fx-background-color: #fff;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="411.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TableView fx:id="tableViewMaskapai" prefHeight="409.0" prefWidth="679.0" GridPane.rowIndex="1">
+                            <columns>
+                                <TableColumn fx:id="colIdMaskapai" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="ID" />
+                                <TableColumn fx:id="tableMaskapai" prefWidth="75.0" style="-fx-background-color: #e6e6e6;" text="Maskapai" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <HBox prefWidth="487.0" spacing="10.0">
+                            <children>
+                                <TextField fx:id="inputUpdateMaskapai" minWidth="-Infinity" prefHeight="35.0" prefWidth="64.0" promptText="ID" />
+                        <TextField fx:id="inputCreateMaskapai" prefHeight="35.0" prefWidth="329.0" promptText="Nama Maskapai" />
+                                <Button fx:id="createButtonMaskapai" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCreateMaskapai" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #3399ff;" text="Create" textFill="WHITE" />
+                        <Button fx:id="updateButtonMaskapai" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCreateMaskapai" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #006680;" text="Update" textFill="WHITE" />
+                        <Button fx:id="deleteButtonMaskapai" minWidth="-Infinity" mnemonicParsing="false" onAction="#buttonCreateMaskapai" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #ff4d4d;" text="Delete" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+                </GridPane>
+            </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+        </StackPane>
+        <Pane fx:id="pnlStatus" layoutX="292.0" prefHeight="70.0" prefWidth="790.0" style="-fx-background-color: #4da6ff;" AnchorPane.leftAnchor="292.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+
+        </Pane>
+        <Label fx:id="lblStatus" layoutX="807.0" layoutY="88.0" text="Create Maskapai" textFill="#444444">
+            <font>
+                <Font size="36.0" />
+            </font>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+        </Label>
+    </children>
+</AnchorPane>

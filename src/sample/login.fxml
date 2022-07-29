@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <left>
+        <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="brandingImageView" fitHeight="400.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/1624374588272.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="lockImageView" fitHeight="88.0" fitWidth="102.0" layoutX="99.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/gembok.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="142.0" text="Username">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameTextField" layoutX="87.0" layoutY="139.0" prefHeight="26.0" prefWidth="175.0" promptText="Username" />
+                <Label layoutX="14.0" layoutY="183.0" text="Password">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="87.0" layoutY="180.0" prefHeight="26.0" prefWidth="175.0" />
+                <PasswordField fx:id="enterPasswordField" layoutX="87.0" layoutY="180.0" prefHeight="26.0" prefWidth="175.0" promptText="Password" />
+                <Button fx:id="loginButton" layoutX="23.0" layoutY="254.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #0099FF;" text="Login">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelButton" layoutX="23.0" layoutY="299.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="240.0" text="Cancel">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="23.0" layoutY="220.0" prefHeight="19.0" prefWidth="239.0" textFill="RED" />
+            <Label fx:id="registerLogin" layoutX="123.0" layoutY="341.0" onMouseClicked="#daftarRegister" prefHeight="18.0" prefWidth="54.0" text="Register" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

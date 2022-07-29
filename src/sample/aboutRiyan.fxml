@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="25.0" prefHeight="106.0" prefWidth="883.0" style="-fx-background-color: #e056fd;">
+         <children>
+            <Label layoutX="61.0" layoutY="21.0" prefHeight="62.0" prefWidth="175.0" style="-fx-text-fill: #ecf0f1;" text="ABOUT">
+               <font>
+                  <Font name="Dubai Medium" size="41.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="73.0" prefHeight="42.0" prefWidth="332.0" style="-fx-text-fill: #ecf0f1;" text="The Developer of This Application">
+               <font>
+                  <Font name="Dubai Regular" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="286.0" fitWidth="268.0" layoutX="63.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../FotoAnggota/Riyanku2.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="355.0" layoutY="213.0" prefHeight="318.0" prefWidth="101.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="181.0" text="Name ">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text="NIM">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text="Age">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="270.0" text="Date of Birth">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="371.0" text="Education">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text="Address">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text="Quotes">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="489.0" layoutY="213.0" prefHeight="318.0" prefWidth="394.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="181.0" text="Riyan Putra Firjatullah">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text="202010370311328">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text="20">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="270.0" text="Probolinggo, 10 APRIL 2001">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="371.0" text="Student of University Muhammadiyah Malang">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text="Citarum Street, no.36, Probolinggo City">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text="Kejar akhirat, maka dunia insyaallah juga ikut">
+               <font>
+                  <Font name="Bodoni MT" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="466.0" layoutY="213.0" prefHeight="318.0" prefWidth="18.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="181.0" text=":">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="181.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="270.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="371.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="377.0" text=":">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
